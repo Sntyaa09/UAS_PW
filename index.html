@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ThisSntyaa</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="stylee.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <style>
+    html {
+        scroll-behavior: smooth;
+    }
+</style>
+</head>
+<div class="cursor-glow"></div>
+<button id="backToTop" title="Go to top">↑</button>
+<body>
+    <div id="scrollBar"></div>
+    <nav>
+        <div class="nav-container">
+            <div class="logo">Sintya Tallane</div>
+            <div class="hamburger" id="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+            <div class="nav-links" id="navLinks">
+                <a href="#home">Home</a>
+                <a href="#portfolio">Portfolio</a> 
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home">
+        <div class="section-content">
+            <div class="home-content">
+                
+                <img src="tyaa3.jpg" alt="Profile" class="profile-img">
+                <h1 class="glitch">Sintya Tallane</h1>
+                <h2 class="animate-on-load animate-delay-2 reveal">Web Development & Software Engineering</h2>
+                <div class="typing-text animate-on-load animate-delay-3 reveal" id="typingText"></div>
+                <div class="typing-text reveal" id="typingText"></div>
+               <p class="animate-on-load animate-delay-4 reveal">Passionate about creating innovative solutions...</p>
+
+<!-- Tombol kontrol musik -->
+<button onclick="toggleMusic()" class="submit-btn" style="margin-top: 20px;">
+    Play / Pause Music
+</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio">
+    <div class="section-content">
+        <h2 class="reveal" style="text-align: center; color: white; margin-bottom: 2rem;">My Portfolio</h2>
+        <div class="portfolio-gallery">
+            <div class="portfolio-item">
+                <img src="stitch2.jpg" alt="My Portfolio">
+                <p class="reveal">Nama : Sintya Tallane, TTL : 25 September 2005, Asal : Ambon, Hobby : Menyanyi & Berenang.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section id="about">
+    <div class="section-content">
+        <div class="about-content">
+            <div class="about-left">
+                <h2 class="reveal" style="margin-bottom: 1rem;">About Me</h2>
+                <img src="tya.jpg" loading="lazy" alt="About Me" class="about-img" />
+            </div>
+            <div class="about-right">
+                <p class="reveal">Halo! Saya Sintya Tallane, saya seorang mahasiswa di bidang Informatika pada Universitas Kristen Indonesia Maluku. Saat ini sedang aktif mengembangkan diri di dunia Web Development, Programming, dan berbagai teknologi digital lainnya.</p>
+                <p class="reveal">Saya memiliki minat besar dalam membangun website yang menarik, fungsional, dan responsif. Saat ini, saya terus belajar dan mengasah kemampuan dalam berbagai bahasa pemrograman serta framework modern untuk mendukung karier saya sebagai seorang developer profesional di masa depan.</p>
+                <p class="reveal">Dengan semangat belajar yang tinggi dan ketertarikan pada inovasi teknologi, saya percaya bahwa setiap baris kode adalah langkah menuju solusi yang lebih baik.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+   <section id="skills">
+    <div class="section-content">
+        <h2 class="reveal" style="margin-bottom: 2rem;">My Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-item" onclick="showSkillInfo('js')">
+
+                <div class="skill-header">
+                    <i class="fab fa-js skill-icon"></i>
+                    <h3>JavaScript</h3>
+                </div>
+                <div class="progress-container">
+                    <div class="progress-bar" style="width: 76%"></div>
+                </div>
+                <span>76%</span>
+            </div>
+            <div class="skill-item" onclick="showSkillInfo('html')">
+                <div class="skill-header">
+                    <i class="fab fa-html5 skill-icon"></i>
+                    <h3>HTML</h3>
+                </div>
+                <div class="progress-container">
+                    <div class="progress-bar" style="width: 80%"></div>
+                </div>
+                <span>80%</span>
+            </div>
+           <div class="skill-item" onclick="showSkillInfo('css')">
+                <div class="skill-header">
+                    <i class="fab fa-css3-alt skill-icon"></i>
+                    <h3>CSS</h3>
+                </div>
+                <div class="progress-container">
+                    <div class="progress-bar" style="width: 70%"></div>
+                </div>
+                <span>70%</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+  <section id="contact">
+    <div class="section-content">
+        <div class="contact-form">
+            <h2 class="reveal" style="margin-bottom: 1.5rem;">Contact Me</h2>
+            <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+
+                <div class="social-links">
+                    <a href="https://www.instagram.com/tiatallane__?igsh=dzBqdmRvMjFzdjFx&utm_source=qr" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="https://wa.me/6282154929126" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://www.facebook.com/share/15Y3Wq4tWj/?mibextid=wwXIfr" class="social-icon"><i class="fab fa-facebook"></i></a>
+                    <a href="https://github.com/Sntyaa09" class="social-icon"><i class="fab fa-github"></i></a>
+                    <a href="" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer style="background-color: #000; color: #fff; text-align: center; padding: 1rem;">
+    &copy; 2025 Sintya Tallane. All Rights Reserved.
+</footer>
+        <!-- Musik Latar -->
+    <audio id="bgMusic" autoplay loop>
+        <source src="WH" type="audio/mpeg">
+        Browser Anda tidak mendukung audio.
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
